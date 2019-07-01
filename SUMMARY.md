@@ -9,6 +9,7 @@
 * [객체](undefined-1/untitled.md)
 * [반복문](undefined-1/undefined-2.md)
 * [배열 내장함수](undefined-1/undefined-3.md)
+* [프로토타입과 클래스](undefined-1/undefined-4.md)
 
 ## 유용한 문법
 

@@ -2,7 +2,7 @@
 
 ### map
 
-map 메서드는 배열 내 각 요소를 순회하며, 주어진 함수에 대입한 결과를 새로운 배열로 반환 
+배열 내 각 요소를 순회하며, 주어진 함수에 대입한 결과를 새로운 배열로 반환 
 
 ```javascript
 //구문
@@ -18,7 +18,7 @@ console.log(squared); // [1, 4, 9]
 
 ### indexOf
 
-indexOf 메서드는 배열에서 지정된 요소**\(숫자, 문자, 불리언\)를 찾을 수있는 인덱스를 반환**하고, 존재하지 않으면 -1을 반환
+배열에서 지정된 요소**\(숫자, 문자, 불리언\)를 찾을 수있는 인덱스를 반환**하고, 존재하지 않으면 -1을 반환
 
 ```javascript
 //구문
@@ -35,7 +35,7 @@ console.log(arr.indexOf(6, 1)); // 2 ??
 
 ### findIndex
 
-findIndex 메서드는 배열에서 지정된 요소**\(객체, 배열\)를 찾을 수 있는 인덱스를 반환**하고, 존재하지 않으면 -1을 반환 
+배열에서 지정된 요소**\(객체, 배열\)를 찾을 수 있는 인덱스를 반환**하고, 존재하지 않으면 -1을 반환 
 
 ```javascript
 //구문
@@ -111,7 +111,56 @@ console.log(tasksNotDone); //아래 배열 반환
 
 
 
-### 
+### splice
+
+배열의 요소를 삭제, 교체, 새 요소 추
+
+```javascript
+//구문
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+//예
+const months = ['Jan', 'March', 'April'];
+
+//추가
+months.splice(1, 0, 'Feb');
+console.log(months); // ['Jan', 'Feb', 'March', 'April']
+
+//삭제
+months.splice(0, 1);
+console.log(months); // ['March', 'April']
+
+//교체
+months.splice(1, 1, 'Feb');
+console.log(months); // ['Jan', 'Feb', 'April'];
+```
+
+
+
+### concat
+
+인자로 주어진 **배열이나 값들을 기존 배열에 합쳐 새 배열은 반환**
+
+```javascript
+//구문 
+array.concat([value1[, value2[, ...[, valueN]]]])
+
+//예
+const arr = [1, 2, 3];
+const arr2 = [4, 5];
+
+const newArr = arr.concat(arr2);
+console.log(newArr); // [1, 2, 3, 4, 5];
+
+const newArr = arr.concat(4, 5);
+console.log(newArr); // [1, 2, 3, 4, 5];
+```
+
+
+
+### reduce \(다시 이해하고 정리하기\)
+
+
 
 
 
