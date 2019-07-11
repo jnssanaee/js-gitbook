@@ -4,6 +4,7 @@
 
 ## 자바스크립트 입문 <a id="undefined-1"></a>
 
+* [ES6](undefined-1/es6.md)
 * [연산자](undefined-1/undefined.md)
 * [함수](undefined-1/undefined-1.md)
 * [객체](undefined-1/untitled.md)
